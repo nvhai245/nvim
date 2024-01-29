@@ -27,9 +27,6 @@ local plugins = {
   },
   {
     "mfussenegger/nvim-dap",
-    init = function()
-      require("core.utils").load_mappings("dap")
-    end,
   },
   {
     "leoluz/nvim-dap-go",
@@ -37,7 +34,6 @@ local plugins = {
     dependencies = "mfussenegger/nvim-dap",
     config = function(_, opts)
       require("dap-go").setup(opts)
-      require("core.utils").load_mappings("dap_go")
     end,
   },
   {
@@ -46,7 +42,6 @@ local plugins = {
     dependencies = "mfussenegger/nvim-dap",
     config = function(_, opts)
       require("dapui").setup(opts)
-      require("core.utils").load_mappings("dap_ui")
     end,
   },
   {
@@ -65,6 +60,7 @@ local plugins = {
     },
     config = function()
       require("go").setup()
+      require("core.utils").load_mappings("gopher")
     end,
     event = { "CmdlineEnter" },
     ft = { "go", 'gomod' },
@@ -101,11 +97,16 @@ local plugins = {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
+    config = function ()
+      require("core.utils").load_mappings("lazygit")
+    end,
   },
   {
     "sindrets/diffview.nvim",
     event = { "VimEnter" },
+    config = function()
+      require("core.utils").load_mappings("diffview")
+    end
   }
 }
 return plugins
-
