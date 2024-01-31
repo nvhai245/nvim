@@ -97,7 +97,7 @@ local plugins = {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
-    config = function ()
+    config = function()
       require("core.utils").load_mappings("lazygit")
     end,
   },
@@ -107,6 +107,13 @@ local plugins = {
     config = function()
       require("core.utils").load_mappings("diffview")
     end
-  }
+  },
+  {
+    "rmagatti/auto-session",
+    event = { "VimEnter" },
+    config = function()
+      require("custom.configs.auto-session")
+    end
+  },
 }
 return plugins
