@@ -144,5 +144,9 @@ local plugins = {
       require("custom.configs.auto-session")
     end
   },
+  {
+    "xiyaowong/transparent.nvim",
+    event = { "VimEnter" },
+  },
 }
 return plugins

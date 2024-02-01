@@ -21,3 +21,4 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 vim.cmd [[set hlsearch]]
+vim.cmd [[hi NvimTreeNormal guibg=NONE]]
