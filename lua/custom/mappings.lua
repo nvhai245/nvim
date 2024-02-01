@@ -26,7 +26,7 @@ M.gopher = {
       "Run go test file",
     },
     ["<leader>rtp"] = {
-      "<cmd> GoTestPackage -v -F <CR>",
+      "<cmd> GoTestPkg -v -F <CR>",
       "Run go test package",
     },
     ["<leader>rta"] = {
@@ -68,6 +68,14 @@ M.gopher = {
     ["<leader>gsy"] = {
       "<cmd> GoTagAdd yaml <CR>",
       "Add yaml struct tags"
+    },
+    ["<leader>gsf"] = {
+      "<cmd> GoFillStruct <CR>",
+      "Fill Go Struct"
+    },
+    ["<leader>gsg"] = {
+      "<cmd> GoJson2Struct <CR>",
+      "Generate Go Struct From Json"
     },
   }
 }
