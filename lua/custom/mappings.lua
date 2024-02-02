@@ -33,6 +33,14 @@ M.gopher = {
       "<cmd> GoTest -v -F <CR>",
       "Run go test all",
     },
+    ["<leader>atn"] = {
+      "<cmd> GoAddTest <CR>",
+      "Add test for current func",
+    },
+    ["<leader>ata"] = {
+      "<cmd> GoAddAllTest <CR>",
+      "Add test for all funcs",
+    },
     ["<leader>dtn"] = {
       "<cmd> GoDebug -n <CR>",
       "Debug test function",
