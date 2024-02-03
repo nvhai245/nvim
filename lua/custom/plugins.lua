@@ -148,5 +148,15 @@ local plugins = {
     "xiyaowong/transparent.nvim",
     event = { "VimEnter" },
   },
+  {
+    "nvhai245/lazydocker.nvim",
+    event = "VeryLazy",
+    opts = {
+      require("core.utils").load_mappings("lazydocker")
+    },
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+  }
 }
 return plugins

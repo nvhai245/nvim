@@ -112,4 +112,14 @@ M.lazygit = {
   }
 }
 
+M.lazydocker = {
+  plugin = true,
+  n = {
+    ["<leader>ld"] = {
+      "<cmd> LazyDocker <CR>",
+      "Open LazyDocker",
+    },
+  }
+}
+
 return M

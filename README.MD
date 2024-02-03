@@ -3,4 +3,5 @@
 - gopls
 - lua-language-server
 - lazygit
+- lazydocker
 
