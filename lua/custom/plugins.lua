@@ -157,6 +157,11 @@ local plugins = {
     dependencies = {
       "MunifTanjim/nui.nvim",
     },
-  }
+  },
+  {
+    "ellisonleao/glow.nvim",
+    config = true,
+    cmd = "Glow"
+  },
 }
 return plugins
