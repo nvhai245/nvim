@@ -226,13 +226,6 @@ local default_plugins = {
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
     init = function()
       require("core.utils").load_mappings "nvimtree"
-      vim.api.nvim_create_autocmd({ "SessionLoadPost" }, {
-        callback = function()
-          vim.cmd [[NvimTreeOpen]]
-          vim.cmd [[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]
-          vim.cmd [[hi NvimTreeNormalNC guibg=NONE ctermbg=NONE]]
-        end,
-      })
     end,
     opts = function()
       return require "plugins.configs.nvimtree"

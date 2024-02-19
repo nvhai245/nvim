@@ -139,7 +139,7 @@ local plugins = {
   },
   {
     "rmagatti/auto-session",
-    event = { "VimEnter" },
+    lazy = false,
     config = function()
       require("custom.configs.auto-session")
     end
