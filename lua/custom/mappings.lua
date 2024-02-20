@@ -70,11 +70,11 @@ M.gopher = {
       "Debug main() func",
     },
     ["<leader>gsj"] = {
-      "<cmd> GoTagAdd json <CR>",
+      "<cmd> GoAddTag json <CR>",
       "Add json struct tags"
     },
     ["<leader>gsy"] = {
-      "<cmd> GoTagAdd yaml <CR>",
+      "<cmd> GoAddTag yaml <CR>",
       "Add yaml struct tags"
     },
     ["<leader>gsf"] = {

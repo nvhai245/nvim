@@ -166,5 +166,13 @@ local plugins = {
       vim.fn["mkdp#util#install"]()
     end
   },
+  {
+    "codota/tabnine-nvim",
+    ft = "*",
+    build = "./dl_binaries.sh",
+    config = function ()
+      require("custom.configs.tabnine")
+    end
+  },
 }
 return plugins
