@@ -41,34 +41,6 @@ M.gopher = {
       "<cmd> GoAddAllTest <CR>",
       "Add test for all funcs",
     },
-    ["<leader>dtn"] = {
-      "<cmd> GoDebug -n <CR>",
-      "Debug test function",
-    },
-    ["<leader>dtf"] = {
-      "<cmd> GoDebug -t <CR>",
-      "Debug test file",
-    },
-    ["<leader>dts"] = {
-      "<cmd> GoDbgStop <CR>",
-      "Stop Debugging",
-    },
-    ["<leader>dtr"] = {
-      "<cmd> GoDebug -R <CR>",
-      "Re-run Debug",
-    },
-    ["<leader>dtp"] = {
-      "<cmd> GoDebug -p <CR>",
-      "Debug test for package",
-    },
-    ["<leader>db"] = {
-      "<cmd> GoDebug -b <CR>",
-      "Toggle Breakpoint",
-    },
-    ["<leader>dm"] = {
-      "<cmd> GoDebug <CR>",
-      "Debug main() func",
-    },
     ["<leader>gsj"] = {
       "<cmd> GoAddTag json <CR>",
       "Add json struct tags"
@@ -119,6 +91,60 @@ M.lazydocker = {
       "<cmd> LazyDocker <CR>",
       "Open LazyDocker",
     },
+  }
+}
+
+M.dapui = {
+  plugin = true,
+  n = {
+    ["<leader>du"] = {
+      "<cmd> DapUiToggle <CR>",
+      "Toggle DapUi",
+    },
+  }
+}
+
+M.dap = {
+  plugin = true,
+  n = {
+    ["<F5>"] = {
+      "<cmd> DapContinue <CR>",
+      "Dap Continue",
+    },
+    ["<F10>"] = {
+      "<cmd> DapStepOver <CR>",
+      "Dap Step Over",
+    },
+    ["<F11>"] = {
+      "<cmd> DapStepInto <CR>",
+      "Dap Step Into",
+    },
+    ["<F12>"] = {
+      "<cmd> DapStepOut <CR>",
+      "Dap Step Out",
+    },
+    ["<F9>"] = {
+      "<cmd> DapTerminate <CR>",
+      "Dap Terminate",
+    },
+    ["<leader>dr"] = {
+      "<cmd> DapRerun <CR>",
+      "Dap Rerun",
+    },
+    ["<leader>db"] = {
+      "<cmd> DapToggleBreakpoint <CR>",
+      "Dap Toggle Breakpoint",
+    },
+  }
+}
+
+M.dapgo = {
+  plugin = true,
+  n = {
+    ["<leader>dt"] = {
+      "<cmd> lua require('dap-go').debug_test() <CR>",
+      "Debug Go Nearest Test",
+    }
   }
 }
 
