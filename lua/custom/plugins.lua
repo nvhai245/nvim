@@ -1,5 +1,11 @@
 local plugins = {
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function()
+      return require "custom.configs.treesitter"
+    end,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
