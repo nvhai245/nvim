@@ -181,9 +181,9 @@ local plugins = {
     end
   },
   {
-    'stevearc/dressing.nvim',
+    "doums/suit.nvim",
     event = "VeryLazy",
-    opts = {},
+    config = true
   }
 }
 return plugins
