@@ -4,6 +4,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
+        "lua-language-server",
       },
     },
   },
