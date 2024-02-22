@@ -20,6 +20,10 @@ dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
+vim.api.nvim_create_autocmd("BufLeave", {
+  command = "wa",
+})
+
 vim.cmd [[set hlsearch]]
 vim.cmd [[NvimTreeOpen]]
 vim.cmd [[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]

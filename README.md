@@ -6,5 +6,5 @@
 - lazydocker
 - plantuml
 ## TSInstallInfo
-- go gomod gosum yaml toml json sql markdown dockerfile vimdoc
+- go gomod gosum yaml toml json sql markdown dockerfile vimdoc make
 
