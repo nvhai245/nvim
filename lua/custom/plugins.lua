@@ -15,10 +15,10 @@ local plugins = {
     end,
   },
   {
-    "jose-elias-alvarez/null-ls.nvim",
+    "nvimtools/none-ls.nvim",
     ft = "go",
     opts = function()
-      return require "custom.configs.null-ls"
+      return require "custom.configs.none-ls"
     end,
   },
   {
