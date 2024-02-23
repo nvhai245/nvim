@@ -7,12 +7,9 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "gopls",
-        "lua-language-server",
-      },
-    },
+    opts = function()
+      return require "custom.configs.mason"
+    end
   },
   {
     "neovim/nvim-lspconfig",
@@ -196,6 +193,12 @@ local plugins = {
     "doums/suit.nvim",
     event = "VeryLazy",
     config = true
+  },
+  {
+    "luukvbaal/statuscol.nvim",
+    config = function()
+      require("custom.configs.statuscol")
+    end,
   }
 }
 return plugins
