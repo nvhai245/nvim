@@ -16,9 +16,14 @@ local plugins = {
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      { "antosha417/nvim-lsp-file-operations", config = true },
+      "hrsh7th/cmp-nvim-lsp",
+    },
     config = function()
       require("plugins.configs.lspconfig")
       require("custom.configs.lspconfig")
+      require("core.utils").load_mappings("lspconfig")
     end,
   },
   {
