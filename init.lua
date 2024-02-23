@@ -28,3 +28,6 @@ vim.cmd [[set hlsearch]]
 vim.cmd [[NvimTreeOpen]]
 vim.cmd [[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]
 vim.cmd [[hi NvimTreeNormalNC guibg=NONE ctermbg=NONE]]
+vim.opt.nu = true
+vim.opt.relativenumber = true
+vim.cmd [[let &stc=' ' . '%#NonText#%{&nu?v:lnum:""}' . '%=%{&rnu&&(v:lnum%2)?"\ ".v:relnum:""}' . '%#LineNr#%{&rnu&&!(v:lnum%2)?"\ ".v:relnum:""}' . '│%T']]
