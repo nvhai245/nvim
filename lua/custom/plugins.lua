@@ -195,10 +195,8 @@ local plugins = {
     config = true
   },
   {
-    "luukvbaal/statuscol.nvim",
-    config = function()
-      require("custom.configs.statuscol")
-    end,
+    'ThePrimeagen/vim-be-good',
+    event = "VeryLazy"
   }
 }
 return plugins

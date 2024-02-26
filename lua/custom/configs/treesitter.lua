@@ -16,7 +16,9 @@ local options = {
     "dockerfile",
     "vim",
     "vimdoc",
-    "make"
+    "make",
+    "html",
+    "javascript",
   },
 
   indent = {
