@@ -22,3 +22,4 @@ require "plugins"
 
 vim.cmd [[set hlsearch]]
 vim.opt.relativenumber = true
+vim.cmd.colorscheme "kanagawa-dragon"

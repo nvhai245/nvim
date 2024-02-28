@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "rebelot/kanagawa.nvim",
+    lazy = false,
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function()
       return require "custom.configs.treesitter"
