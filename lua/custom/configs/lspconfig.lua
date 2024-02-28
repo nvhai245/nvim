@@ -26,4 +26,5 @@ lspconfig.gopls.setup {
 lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  command = { "htmlhint", "--format", "json" },
 }
