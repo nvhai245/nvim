@@ -28,3 +28,54 @@ lspconfig.html.setup {
   capabilities = capabilities,
   command = { "htmlhint", "--format", "json" },
 }
+
+lspconfig.yamlls.setup {
+  settings = {
+    yaml = {
+      schemaStore = {
+        enable = false,
+        url = "",
+      },
+      schemas = require('schemastore').yaml.schemas {
+        select = {
+          'kustomization.yaml',
+          'docker-compose.yml'
+        },
+      }
+    }
+  }
+}
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "basic",
+        useLibraryCodeForTypes = true
+      }
+    }
+  }
+}
+
+lspconfig.jsonls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    json = {
+      schemas = require("schemastore").json.schemas(),
+      validate = { enable = true }
+    }
+  }
+}
+
+lspconfig.dockerls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+lspconfig.bashls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}

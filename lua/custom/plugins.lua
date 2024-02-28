@@ -180,6 +180,9 @@ local plugins = {
     config = true
   },
   {
+    "b0o/schemastore.nvim",
+  },
+  {
     'ThePrimeagen/vim-be-good',
     event = "VeryLazy"
   }

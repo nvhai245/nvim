@@ -3,6 +3,11 @@ local options = {
     "gopls",
     "lua-language-server",
     "html-lsp",
+    "pyright",
+    "yaml-language-server",
+    "dockerfile-language-server",
+    "json-lsp",
+    "bash-language-server",
   },
 }
 
