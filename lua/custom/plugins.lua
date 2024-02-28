@@ -89,7 +89,7 @@ local plugins = {
       require("core.utils").load_mappings("gopher")
     end,
     event = { "CmdlineEnter" },
-    ft = { "go", 'gomod' },
+    ft = { "*.go", "gomod" },
     build = ':lua require("go.install").update_all_sync()'
   },
   {
