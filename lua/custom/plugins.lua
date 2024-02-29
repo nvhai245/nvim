@@ -35,13 +35,6 @@ local plugins = {
     end,
   },
   {
-    "Pocco81/auto-save.nvim",
-    event = "BufReadPre",
-    config = function()
-      require("auto-save").setup()
-    end,
-  },
-  {
     "romainl/vim-cool",
     lazy = false,
   },

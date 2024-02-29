@@ -20,6 +20,15 @@ dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
+-- UI config
 vim.cmd [[set hlsearch]]
 vim.opt.relativenumber = true
 vim.cmd.colorscheme "kanagawa-dragon"
+
+-- autocmds
+local autocmd = vim.api.nvim_create_autocmd
+autocmd({ "BufLeave", "FocusLost" }, {
+  pattern = "*",
+  command = "wall",
+})
+
