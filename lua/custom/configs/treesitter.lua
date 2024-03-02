@@ -19,6 +19,7 @@ local options = {
     "make",
     "html",
     "javascript",
+    "rego",
   },
 
   indent = {
