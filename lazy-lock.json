@@ -1,7 +1,6 @@
 {
   "Comment.nvim": { "branch": "master", "commit": "0236521ea582747b58869cb72f70ccfa967d2e89" },
   "LuaSnip": { "branch": "master", "commit": "f3b3d3446bcbfa62d638b1903ff00a78b2b730a1" },
-  "auto-save.nvim": { "branch": "main", "commit": "979b6c82f60cfa80f4cf437d77446d0ded0addf0" },
   "auto-session": { "branch": "main", "commit": "29a8c77a0579636d5520aebd38bdbc2e6079f2f5" },
   "base46": { "branch": "v2.0", "commit": "3f2b658cbd6650ddaf2bae3233e143a41ca25b1a" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
@@ -12,6 +11,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
   "codeium.vim": { "branch": "main", "commit": "9286586f790f837c4c3032f2124559936e77e6ed" },
   "diffview.nvim": { "branch": "main", "commit": "3dc498c9777fe79156f3d32dddd483b8b3dbd95f" },
+  "dotenv.nvim": { "branch": "main", "commit": "efc709e3b15ed7d1db48c3f495a2d04b55d60dee" },
   "friendly-snippets": { "branch": "main", "commit": "dbd45e9ba76d535e4cba88afa1b7aa43bb765336" },
   "gitsigns.nvim": { "branch": "main", "commit": "2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae" },
   "go.nvim": { "branch": "master", "commit": "d748e79011437d5b080006b896b3c296656641d7" },
