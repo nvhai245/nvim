@@ -78,11 +78,17 @@ local plugins = {
       "nvim-treesitter/nvim-treesitter",
     },
     config = function()
-      require("go").setup()
+      require("go").setup({
+        lsp_codelens = false,
+        lsp_keymaps = false,
+        lsp_inlay_hints = {
+          enable = false,
+        },
+      })
       require("core.utils").load_mappings("gopher")
     end,
+    ft = { "go", "gomod" },
     event = { "CmdlineEnter" },
-    ft = { "*.go", "gomod" },
     build = ':lua require("go.install").update_all_sync()'
   },
   {
