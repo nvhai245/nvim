@@ -24,6 +24,16 @@ require "plugins"
 vim.cmd [[set hlsearch]]
 vim.opt.relativenumber = true
 vim.cmd.colorscheme "kanagawa-dragon"
+vim.cmd [[
+ hi Normal guibg=none ctermbg=none
+ hi LineNr guibg=none ctermbg=none
+ hi Folded guibg=none ctermbg=none
+ hi NonText guibg=none ctermbg=none
+ hi SpecialKey guibg=none ctermbg=none
+ hi VertSplit guibg=none ctermbg=none
+ hi SignColumn guibg=none ctermbg=none
+ hi EndOfBuffer guibg=none ctermbg=none
+]]
 
 -- autocmds
 local autocmd = vim.api.nvim_create_autocmd
@@ -31,4 +41,3 @@ autocmd({ "BufLeave", "FocusLost" }, {
   pattern = "*",
   command = "wall",
 })
-
