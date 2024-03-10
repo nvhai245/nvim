@@ -90,13 +90,13 @@ lspconfig.marksman.setup {
   capabilities = capabilities,
 }
 
-if not lspconfig.configs.regols then
-  lspconfig.configs.regols = {
+if not lspconfig.regols then
+  lspconfig.regols = {
     default_config = {
-      cmd = {'regols'};
-      filetypes = { 'rego' };
-      root_dir = lspconfig.util.root_pattern(".git");
+      cmd = { 'regols' },
+      filetypes = { 'rego' },
+      root_dir = lspconfig.util.root_pattern(".git"),
     }
   }
 end
-lspconfig.regols.setup{}
+lspconfig.regols.setup {}
