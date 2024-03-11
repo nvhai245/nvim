@@ -26,13 +26,16 @@ vim.opt.relativenumber = true
 vim.cmd.colorscheme "kanagawa-dragon"
 vim.cmd [[
  hi Normal guibg=none ctermbg=none
+ hi NormalNC guibg=none ctermbg=none
  hi LineNr guibg=none ctermbg=none
- hi Folded guibg=none ctermbg=none
  hi NonText guibg=none ctermbg=none
- hi SpecialKey guibg=none ctermbg=none
- hi VertSplit guibg=none ctermbg=none
  hi SignColumn guibg=none ctermbg=none
+ hi CursorLine guibg=none ctermbg=none
+ hi CursorLineNr guibg=none ctermbg=none
  hi EndOfBuffer guibg=none ctermbg=none
+ hi StatusLine guibg=none ctermbg=none
+ hi StatusLineNC guibg=none ctermbg=none
+ hi SignColumn guibg=none ctermbg=none
 ]]
 
 -- autocmds

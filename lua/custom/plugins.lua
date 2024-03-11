@@ -145,7 +145,7 @@ local plugins = {
   },
   {
     "xiyaowong/transparent.nvim",
-    event = { "VimEnter" },
+    lazy = false,
   },
   {
     "nvhai245/lazydocker.nvim",
