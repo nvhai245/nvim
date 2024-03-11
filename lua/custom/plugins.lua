@@ -144,10 +144,6 @@ local plugins = {
     end
   },
   {
-    "xiyaowong/transparent.nvim",
-    lazy = false,
-  },
-  {
     "nvhai245/lazydocker.nvim",
     event = "VeryLazy",
     opts = {
