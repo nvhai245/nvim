@@ -30,11 +30,15 @@ vim.cmd [[
  hi LineNr guibg=none ctermbg=none
  hi NonText guibg=none ctermbg=none
  hi SignColumn guibg=none ctermbg=none
- hi CursorLineNr guibg=none ctermbg=none
  hi EndOfBuffer guibg=none ctermbg=none
- hi StatusLine guibg=none ctermbg=none
- hi StatusLineNC guibg=none ctermbg=none
  hi SignColumn guibg=none ctermbg=none
+ hi VertSplit guibg=none ctermbg=none
+ hi TbLine guibg=none ctermbg=none
+ hi TbLineBufOn guibg=none ctermbg=none
+ hi TbLineBufOff guibg=none ctermbg=none
+ hi TbLineBufOnClose guibg=none ctermbg=none
+ hi TbLineBufOffClose guibg=none ctermbg=none
+ hi TbLineFill guibg=none ctermbg=none
 ]]
 
 -- autocmds
