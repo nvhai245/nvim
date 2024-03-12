@@ -30,7 +30,6 @@ vim.cmd [[
  hi LineNr guibg=none ctermbg=none
  hi NonText guibg=none ctermbg=none
  hi SignColumn guibg=none ctermbg=none
- hi CursorLine guibg=none ctermbg=none
  hi CursorLineNr guibg=none ctermbg=none
  hi EndOfBuffer guibg=none ctermbg=none
  hi StatusLine guibg=none ctermbg=none
