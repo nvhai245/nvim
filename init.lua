@@ -20,6 +20,8 @@ dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
+vim.cmd([[set clipboard+=unnamedplus]])
+
 -- UI config
 vim.cmd [[set hlsearch]]
 vim.opt.relativenumber = true
@@ -28,6 +30,12 @@ vim.cmd [[
  hi Normal guibg=none ctermbg=none
  hi NormalNC guibg=none ctermbg=none
  hi LineNr guibg=none ctermbg=none
+ hi CursorLine guibg=none ctermbg=none
+ hi CursorLineNr guibg=none ctermbg=none
+ hi TelescopeNormal guibg=none ctermbg=none
+ hi TelescopeBorder guibg=none ctermbg=none
+ hi TelescopeSelection guibg=#252525
+ hi TelescopeTitle guibg=none ctermbg=none
  hi NonText guibg=none ctermbg=none
  hi SignColumn guibg=none ctermbg=none
  hi EndOfBuffer guibg=none ctermbg=none
@@ -39,6 +47,9 @@ vim.cmd [[
  hi TbLineBufOnClose guibg=none ctermbg=none
  hi TbLineBufOffClose guibg=none ctermbg=none
  hi TbLineFill guibg=none ctermbg=none
+ hi GitSignsAdd guibg=none ctermbg=none
+ hi GitSignsChange guibg=none ctermbg=none
+ hi GitSignsDelete guibg=none ctermbg=none
 ]]
 
 -- autocmds

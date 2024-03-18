@@ -2,7 +2,7 @@
 ## External Requirement
 - build-essentials
 - nodejs, npm
-- fzf
+- fzf, xclip, ripgrep
 - lazygit
 - lazydocker
 
