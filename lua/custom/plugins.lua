@@ -188,7 +188,16 @@ local plugins = {
     end
   },
   {
-    'ThePrimeagen/vim-be-good',
+    "edluffy/hologram.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("hologram").setup({
+        auto_display = true,
+      })
+    end
+  },
+  {
+    "ThePrimeagen/vim-be-good",
     event = "VeryLazy"
   }
 }
