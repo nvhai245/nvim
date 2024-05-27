@@ -90,6 +90,16 @@ lspconfig.marksman.setup {
   capabilities = capabilities,
 }
 
+lspconfig.astro.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 if not lspconfig.regols then
   lspconfig.regols = {
     default_config = {

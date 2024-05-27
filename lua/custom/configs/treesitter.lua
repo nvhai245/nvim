@@ -19,6 +19,8 @@ local options = {
     "make",
     "html",
     "javascript",
+    "typescript",
+    "astro",
     "rego",
   },
 

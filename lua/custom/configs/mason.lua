@@ -10,6 +10,8 @@ local options = {
     "dockerfile-language-server",
     "json-lsp",
     "bash-language-server",
+    "astro-language-server",
+    "typescript-language-server",
   },
 }
 
