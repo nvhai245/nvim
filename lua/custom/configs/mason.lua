@@ -12,6 +12,8 @@ local options = {
     "bash-language-server",
     "astro-language-server",
     "typescript-language-server",
+    "css-lsp",
+    "regal"
   },
 }
 

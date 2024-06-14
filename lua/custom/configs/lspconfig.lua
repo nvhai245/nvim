@@ -100,13 +100,12 @@ lspconfig.tsserver.setup {
   capabilities = capabilities,
 }
 
-if not lspconfig.regols then
-  lspconfig.regols = {
-    default_config = {
-      cmd = { 'regols' },
-      filetypes = { 'rego' },
-      root_dir = lspconfig.util.root_pattern(".git"),
-    }
-  }
-end
-lspconfig.regols.setup {}
+lspconfig.regal.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+lspconfig.cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}

@@ -18,6 +18,7 @@ local options = {
     "vimdoc",
     "make",
     "html",
+    "css",
     "javascript",
     "typescript",
     "astro",
