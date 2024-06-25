@@ -148,6 +148,16 @@ M.dapgo = {
   }
 }
 
+M.make = {
+  plugin = true,
+  n = {
+    ["<leader>mk"] = {
+      "<cmd> Telescope make <CR>",
+      "Makefile",
+    }
+  }
+}
+
 M.lspconfig = {
   plugin = true,
   n = {

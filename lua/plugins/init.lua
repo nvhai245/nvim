@@ -246,6 +246,15 @@ local default_plugins = {
         build = "make"
       },
       "nvim-tree/nvim-web-devicons",
+      {
+        "sopa0/telescope-makefile",
+        dependencies = {
+          "akinsho/nvim-toggleterm.lua",
+        },
+        config = function()
+          require("core.utils").load_mappings("make")
+        end
+      },
     },
     cmd = "Telescope",
     init = function()
