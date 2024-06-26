@@ -29,7 +29,7 @@ local plugins = {
   },
   {
     "nvimtools/none-ls.nvim",
-    ft = "go",
+    ft = { "go", "yaml" },
     opts = function()
       return require "custom.configs.none-ls"
     end,

@@ -7,6 +7,7 @@ local options = {
     "html-lsp",
     "pyright",
     "yaml-language-server",
+    "yamlfmt",
     "dockerfile-language-server",
     "json-lsp",
     "bash-language-server",
