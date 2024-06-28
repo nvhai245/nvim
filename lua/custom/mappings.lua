@@ -158,6 +158,16 @@ M.make = {
   }
 }
 
+M.undo = {
+  plugin = true,
+  n = {
+    ["<leader>u"] = {
+      "<cmd> Telescope undo <CR>",
+      "Undo",
+    }
+  }
+}
+
 M.lspconfig = {
   plugin = true,
   n = {

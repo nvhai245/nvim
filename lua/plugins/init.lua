@@ -255,6 +255,12 @@ local default_plugins = {
           require("core.utils").load_mappings("make")
         end
       },
+      {
+        "debugloop/telescope-undo.nvim",
+        config = function()
+          require("core.utils").load_mappings("undo")
+        end
+      }
     },
     cmd = "Telescope",
     init = function()

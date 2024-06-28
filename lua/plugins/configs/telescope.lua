@@ -49,7 +49,7 @@ local options = {
     },
   },
 
-  extensions_list = { "themes", "terms", "fzf", "make" },
+  extensions_list = { "themes", "terms", "fzf", "make", "undo" },
 }
 
 return options
