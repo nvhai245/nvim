@@ -8,6 +8,7 @@ local options = {
     "pyright",
     "yaml-language-server",
     "yamlfmt",
+    "markdownlint",
     "dockerfile-language-server",
     "json-lsp",
     "bash-language-server",
