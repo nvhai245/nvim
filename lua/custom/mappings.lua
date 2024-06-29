@@ -168,6 +168,18 @@ M.undo = {
   }
 }
 
+M.flash = {
+  plugin = true,
+  n = {
+    ["<leader>s"] = {
+      function()
+        require("flash").treesitter()
+      end,
+      "Search Treesitter",
+    },
+  }
+}
+
 M.lspconfig = {
   plugin = true,
   n = {

@@ -188,6 +188,25 @@ local plugins = {
     end
   },
   {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {
+      modes = {
+        char = {
+          enabled = false
+        }
+      },
+    },
+    keys = {
+      { "s", mode = "n", function() require("flash").jump() end,   desc = "Flash" },
+      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+    },
+    config = function(_, opts)
+      require("flash").setup(opts)
+      require("core.utils").load_mappings("flash")
+    end,
+  },
+  {
     "ThePrimeagen/vim-be-good",
     event = "VeryLazy"
   }
