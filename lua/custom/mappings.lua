@@ -77,7 +77,7 @@ M.diffview = {
 M.lazygit = {
   plugin = true,
   n = {
-    ["<leader>git"] = {
+    ["<leader>gg"] = {
       "<cmd> LazyGit <CR>",
       "Open LazyGit",
     },
