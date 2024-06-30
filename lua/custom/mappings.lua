@@ -45,9 +45,17 @@ M.gopher = {
       "<cmd> GoAddTag json <CR>",
       "Add json struct tags"
     },
+    ["<leader>grj"] = {
+      "<cmd> GoRmTag json <CR>",
+      "Remove json struct tags"
+    },
     ["<leader>gsy"] = {
       "<cmd> GoAddTag yaml <CR>",
       "Add yaml struct tags"
+    },
+    ["<leader>gry"] = {
+      "<cmd> GoRmTag yaml <CR>",
+      "Remove yaml struct tags"
     },
     ["<leader>gsf"] = {
       "<cmd> GoFillStruct <CR>",
