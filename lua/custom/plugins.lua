@@ -162,12 +162,15 @@ local plugins = {
     end
   },
   {
-    "Exafunction/codeium.vim",
-    event = 'BufEnter',
+    "supermaven-inc/supermaven-nvim",
+    event = { "BufEnter" },
     config = function()
-      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-      vim.g.codeium_no_map_tab = 1
-    end
+      require("supermaven-nvim").setup({
+        keymaps = {
+          accept_suggestion = "<C-g>",
+        },
+      })
+    end,
   },
   {
     "doums/suit.nvim",
