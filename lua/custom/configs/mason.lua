@@ -1,6 +1,8 @@
 local options = {
   ensure_installed = {
     "gopls",
+    "goimports",
+    "golines",
     "lua-language-server",
     "vim-language-server",
     "marksman",
