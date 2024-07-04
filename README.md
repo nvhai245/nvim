@@ -1,7 +1,7 @@
 # Neovim Configuration
 ## External Requirement
 - build-essentials
-- nodejs, npm
+- nodejs, npm, yarn
 - fzf, xclip, ripgrep
 - lazygit
 - lazydocker
