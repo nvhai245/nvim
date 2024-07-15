@@ -112,7 +112,7 @@ lspconfig.cssls.setup {
   capabilities = capabilities,
 }
 
-lspconfig.vuels.setup {
+lspconfig.volar.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
