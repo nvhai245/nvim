@@ -18,7 +18,7 @@ local options = {
     "typescript-language-server",
     "css-lsp",
     "regal",
-    "vue-language-server",
+    "vls",
   },
 }
 
