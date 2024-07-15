@@ -23,6 +23,7 @@ local options = {
     "typescript",
     "astro",
     "rego",
+    "vue",
   },
 
   indent = {

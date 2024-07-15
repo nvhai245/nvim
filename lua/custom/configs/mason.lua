@@ -17,7 +17,8 @@ local options = {
     "astro-language-server",
     "typescript-language-server",
     "css-lsp",
-    "regal"
+    "regal",
+    "vue-language-server",
   },
 }
 

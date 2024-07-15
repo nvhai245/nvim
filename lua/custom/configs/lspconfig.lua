@@ -111,3 +111,8 @@ lspconfig.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+lspconfig.vuels.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
