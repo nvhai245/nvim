@@ -260,7 +260,13 @@ local default_plugins = {
         config = function()
           require("core.utils").load_mappings("undo")
         end
-      }
+      },
+      {
+        "princejoogie/dir-telescope.nvim",
+        config = function()
+          require("core.utils").load_mappings("live_grep")
+        end
+      },
     },
     cmd = "Telescope",
     init = function()

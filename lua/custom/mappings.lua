@@ -188,6 +188,16 @@ M.flash = {
   }
 }
 
+M.live_grep = {
+  plugin = true,
+  n = {
+    ["<leader>fd"] = {
+      "<cmd> Telescope dir live_grep <CR>",
+      "Telescope Live Grep Directory",
+    },
+  }
+}
+
 M.lspconfig = {
   plugin = true,
   n = {
