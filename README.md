@@ -2,7 +2,7 @@
 ## External Requirement
 - build-essentials
 - nodejs, npm, yarn
-- fzf, xclip, ripgrep, fd
+- fzf, xclip, ripgrep, fd-find
 - lazygit
 - lazydocker
 - win32yank (wsl2)
