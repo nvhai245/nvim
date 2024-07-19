@@ -225,6 +225,11 @@ M.lspconfig = {
       "LSP implementation",
     },
 
+    ["<leader>fn"] = {
+      "<cmd> lua require('telescope.builtin').lsp_document_symbols({symbols={'function', 'method'}})<CR>",
+      "LSP list functions",
+    },
+
     ["<leader>ls"] = {
       function()
         vim.lsp.buf.signature_help()
