@@ -58,3 +58,9 @@ autocmd({ "BufLeave", "FocusLost" }, {
   pattern = "*",
   command = "wall",
 })
+vim.filetype.add({
+  extension = {
+    gunk = "gunk",
+  },
+})
+vim.treesitter.language.register("go", "gunk")

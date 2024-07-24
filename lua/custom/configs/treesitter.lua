@@ -24,6 +24,7 @@ local options = {
     "astro",
     "rego",
     "vue",
+    "proto",
   },
 
   indent = {
