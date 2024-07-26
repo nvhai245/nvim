@@ -219,6 +219,16 @@ local plugins = {
     config = true,
   },
   {
+    "vinnymeller/swagger-preview.nvim",
+    config = function()
+      require("swagger-preview").setup({
+        host = "localhost",
+        port = 8888,
+      })
+    end,
+    ft = { "yaml", "json" },
+  },
+  {
     "ThePrimeagen/vim-be-good",
     event = "VeryLazy"
   }
