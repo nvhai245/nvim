@@ -83,6 +83,10 @@ M.diffview = {
       "<cmd> tabclose <CR>",
       "Close tab",
     },
+    ["<leader>ta"] = {
+      '<cmd> %bd|e# | lua require("nvim-tree.api").tree.toggle({ focus = false }) <CR>',
+      "Close all buffers",
+    },
   }
 }
 
