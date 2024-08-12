@@ -19,6 +19,7 @@ local options = {
     "css-lsp",
     "regal",
     "vue-language-server",
+    "sqls",
   },
 }
 

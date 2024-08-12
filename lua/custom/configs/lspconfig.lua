@@ -23,6 +23,23 @@ lspconfig.gopls.setup {
   },
 }
 
+lspconfig.sqls.setup {
+  on_attach = function(client, bufnr)
+    require("sqls").on_attach(client, bufnr)
+  end,
+  capabilities = capabilities,
+  settings = {
+    sqls = {
+      connections = {
+        {
+          driver = 'postgresql',
+          dataSourceName = 'postgres://postgres:postgres@localhost:5437/platform?sslmode=disable',
+        },
+      },
+    },
+  },
+}
+
 lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,

@@ -79,6 +79,10 @@ M.diffview = {
       "<cmd> DiffviewClose <CR>",
       "Close Diffview",
     },
+    ["<leader>tc"] = {
+      "<cmd> tabclose <CR>",
+      "Close tab",
+    },
   }
 }
 

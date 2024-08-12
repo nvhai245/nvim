@@ -229,6 +229,9 @@ local plugins = {
     ft = { "yaml", "json" },
   },
   {
+    "nanotee/sqls.nvim",
+  },
+  {
     "ThePrimeagen/vim-be-good",
     event = "VeryLazy"
   }
