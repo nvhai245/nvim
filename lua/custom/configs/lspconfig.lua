@@ -33,7 +33,19 @@ lspconfig.sqls.setup {
       connections = {
         {
           driver = 'postgresql',
-          dataSourceName = 'postgres://postgres:postgres@localhost:5437/platform?sslmode=disable',
+          dataSourceName = 'postgres://platform:platform@localhost:5437/platform?sslmode=disable',
+        },
+        {
+          driver = 'postgresql',
+          dataSourceName = 'postgres://sso:sso@localhost:5438/sso?sslmode=disable',
+        },
+        {
+          driver = 'postgresql',
+          dataSourceName = 'postgres://ide:ide@localhost:5439/ide?sslmode=disable',
+        },
+        {
+          driver = 'postgresql',
+          dataSourceName = 'postgres://cms:cms@localhost:5436/cms?sslmode=disable',
         },
       },
     },
