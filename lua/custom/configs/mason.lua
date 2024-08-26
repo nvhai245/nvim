@@ -7,7 +7,7 @@ local options = {
     "vim-language-server",
     "marksman",
     "html-lsp",
-    "pyright",
+    "basedpyright",
     "yaml-language-server",
     "yamlfmt",
     "markdownlint",

@@ -77,17 +77,9 @@ lspconfig.yamlls.setup {
   }
 }
 
-lspconfig.pyright.setup {
+lspconfig.basedpyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "basic",
-        useLibraryCodeForTypes = true
-      }
-    }
-  }
 }
 
 lspconfig.jsonls.setup {
