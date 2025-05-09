@@ -2,7 +2,7 @@
 local M = {}
 
 M.ui = {
-  theme = 'wombat',
+  theme = 'monochrome',
   telescope = { style = "bordered" },
   statusline = {
     theme = "minimal"

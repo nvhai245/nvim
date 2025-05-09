@@ -25,7 +25,6 @@ vim.cmd([[set clipboard+=unnamedplus]])
 -- UI config
 vim.cmd [[set hlsearch]]
 vim.opt.relativenumber = true
-vim.cmd.colorscheme "kanagawa-dragon"
 vim.cmd [[
  hi Normal guibg=none ctermbg=none
  hi NormalNC guibg=none ctermbg=none
