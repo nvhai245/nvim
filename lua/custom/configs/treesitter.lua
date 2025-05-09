@@ -27,6 +27,7 @@ local options = {
     "proto",
     "rust",
     "c",
+    "zig",
   },
 
   indent = {

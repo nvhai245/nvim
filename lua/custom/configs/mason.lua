@@ -20,6 +20,7 @@ local options = {
     "regal",
     "vue-language-server",
     "sqls",
+    "zls",
   },
 }
 
