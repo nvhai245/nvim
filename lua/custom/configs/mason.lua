@@ -21,6 +21,7 @@ local options = {
     "vue-language-server",
     "sqls",
     "zls",
+    "codelldb",
   },
 }
 

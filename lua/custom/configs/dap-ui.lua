@@ -1,4 +1,4 @@
-local dap, dapui, nvimtree = require("dap"), require("dapui")
+local dap, dapui = require("dap"), require("dapui")
 dap.listeners.before.attach.dapui_config = function()
   dapui.toggle()
 end
