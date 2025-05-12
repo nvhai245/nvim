@@ -334,4 +334,19 @@ M.lspconfig = {
   },
 }
 
+M.nvimtree = {
+  plugin = true,
+  n = {
+    ["<C-n>"] = {
+      function()
+        require("nvim-tree.api").tree.toggle({ focus = false })
+        vim.cmd [[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]
+        vim.cmd [[hi NvimTreeNormalNC guibg=NONE ctermbg=NONE]]
+        vim.cmd [[hi NvimTreeWinSeparator guibg=NONE ctermbg=NONE]]
+      end,
+      "Toggle NvimTree",
+    },
+  }
+}
+
 return M
